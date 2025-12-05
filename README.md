@@ -5,3 +5,4 @@ This is an index of my solutions for the 2025 puzzles.
 2. [Day 2](solutions/day2.py)
 3. [Day 3](solutions/day3.py)
 4. [Day 4](solutions/day4.py)
+5. [Day 5](solutions/day5.py)
