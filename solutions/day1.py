@@ -1,30 +1,12 @@
-import os
-import urllib.request
+from get_input import get_input
 from dotenv import load_dotenv
+
 load_dotenv()
 
 YEAR = 2025
 DAY = 1
 
-url = f"https://adventofcode.com/{YEAR}/day/{DAY}/input"
-session_cookie = os.getenv("AOC_SESSION")
-email = os.getenv("AOC_USER_AGENT_EMAIL", "example@example.com")
-
-if not session_cookie:
-    raise ValueError("AOC_SESSION is missing.")
-
-req = urllib.request.Request(
-    url,
-    headers = {
-        "Cookie": f"session={session_cookie}",
-        "User-Agent": f"github.com/ramennaut/advent-of-code-2025 by {email}",
-    },
-)
-
-with urllib.request.urlopen(req) as response:
-    file = response.read().decode("utf-8")
-
-lines = file.strip().split("\n")
+lines = get_input(YEAR, DAY).split("\n")
 
 current_position = 50
 count_part1 = 0
