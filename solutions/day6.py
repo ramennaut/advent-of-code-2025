@@ -1,4 +1,3 @@
-# %%
 from math import prod
 from get_input import get_input
 from dotenv import load_dotenv
