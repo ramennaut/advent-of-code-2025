@@ -7,3 +7,4 @@ This is an index of my solutions for the 2025 puzzles.
 4. [Day 4](solutions/day4.py)
 5. [Day 5](solutions/day5.py)
 6. [Day 6](solutions/day6.py)
+7. [Day 7](solutions/day7.py)
